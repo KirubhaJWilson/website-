@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMe - Resume Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CMe</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resume-creator">
+            <h2>Create Your ATS-Friendly Resume</h2>
+            <p>Choose an option below to create your resume.</p>
+            <div class="resume-options">
+                <button id="create-from-portfolio">Create from Portfolio</button>
+                <button id="upload-resume">Upload and Update Resume</button>
+            </div>
+            <form id="resume-form" style="display: none;">
+                    <label for="resume-file">Upload Resume (PDF or DOCX):</label>
+                    <input type="file" id="resume-file" name="resume-file" accept=".pdf,.docx">
+
+                    <label for="resume-text">Or paste your resume text here:</label>
+                    <textarea id="resume-text" name="resume-text" rows="10"></textarea>
+
+                    <button type="submit">Create/Update Resume</button>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CMe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

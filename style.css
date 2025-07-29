@@ -34,6 +34,8 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    color: #6C5B7B;
 }
 
 nav ul {

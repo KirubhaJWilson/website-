@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMe - Generate Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CMe</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio-generator">
+            <h2>Generate Your Portfolio</h2>
+            <p>Answer the following questions to generate your personalized portfolio.</p>
+            <form id="portfolio-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="linkedin">LinkedIn Profile:</label>
+                    <input type="url" id="linkedin" name="linkedin">
+
+                    <label for="github">GitHub Profile:</label>
+                    <input type="url" id="github" name="github">
+
+                    <label for="skills">Skills (comma-separated):</label>
+                    <input type="text" id="skills" name="skills">
+
+                    <label for="education">Education:</label>
+                    <textarea id="education" name="education" rows="5"></textarea>
+
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" name="experience" rows="5"></textarea>
+
+                    <label for="achievements">Achievements:</label>
+                    <textarea id="achievements" name="achievements" rows="5"></textarea>
+
+                    <button type="submit">Generate Portfolio</button>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CMe. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

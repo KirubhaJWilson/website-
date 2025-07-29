@@ -1,31 +1,17 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+// Resume page functionality
+const createFromPortfolioButton = document.getElementById('create-from-portfolio');
+const uploadResumeButton = document.getElementById('upload-resume');
+const resumeForm = document.getElementById('resume-form');
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+if (createFromPortfolioButton) {
+    createFromPortfolioButton.addEventListener('click', () => {
+        // In a real application, you would fetch the portfolio data and pre-fill the form
+        resumeForm.style.display = 'block';
     });
-});
+}
 
-// Add active class to navigation links on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
-
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute('id');
-        }
+if (uploadResumeButton) {
+    uploadResumeButton.addEventListener('click', () => {
+        resumeForm.style.display = 'block';
     });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-});
+}
