@@ -28,7 +28,7 @@
                 <button id="create-from-portfolio">Create from Portfolio</button>
                 <button id="upload-resume">Upload and Update Resume</button>
             </div>
-            <form id="resume-form" style="display: none;">
+            <form id="resume-form" action="/create-resume" method="POST" enctype="multipart/form-data" style="display: none;">
                     <label for="resume-file">Upload Resume (PDF or DOCX):</label>
                     <input type="file" id="resume-file" name="resume-file" accept=".pdf,.docx">
 

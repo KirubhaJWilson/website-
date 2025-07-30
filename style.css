@@ -1,24 +1,27 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #FDF6E3;
-    color: #3C3C3C;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
 }
 
 header {
-    background-color: #FF6F61;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
     padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3 {
-    color: #FF6F61;
+    color: #333;
 }
 
-.service, .login-box {
+.service, .login-box, #portfolio-form, #resume-form {
     background-color: white;
-    border: 1px solid #6C5B7B;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .service h3, .login-box h3 {
